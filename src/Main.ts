@@ -6,10 +6,12 @@ namespace Platform_Editor {
  
 
     function editorLoad(_event: Event): void {
+        graph.addChild(new Enemy());
         serializeGraph();
     }
 
     function serializeGraph(): void {
+        fudge.Serializer.registerNamespace(Platform_Editor);
         let serialization: fudge.Serialization = fudge.Serializer.serialize(graph);
         let json: string = fudge.Serializer.stringify(serialization);
         console.log(json);
