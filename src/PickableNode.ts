@@ -1,4 +1,4 @@
-namespace Platform_Editor {
+namespace Test {
     import fudge = FudgeCore;
     export abstract class PickableNode extends fudge.Node {
         constructor(name: string) {

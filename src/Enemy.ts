@@ -1,6 +1,4 @@
-/// <reference path="PickableNode.ts" />
-
-namespace Platform_Editor {
+namespace Test {
     import fudge = FudgeCore;
 
     export class Enemy extends PickableNode {

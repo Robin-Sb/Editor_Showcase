@@ -1,4 +1,4 @@
-namespace Platform_Editor {
+namespace Test {
     import fudge = FudgeCore;
     window.addEventListener("load", editorLoad);
 
@@ -11,7 +11,7 @@ namespace Platform_Editor {
     }
 
     function serializeGraph(): void {
-        fudge.Serializer.registerNamespace(Platform_Editor);
+        fudge.Serializer.registerNamespace(Test);
         let serialization: fudge.Serialization = fudge.Serializer.serialize(graph);
         let json: string = fudge.Serializer.stringify(serialization);
         console.log(json);
